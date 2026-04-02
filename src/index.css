@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #0846ed;
+  --color-primary-container: #859aff;
+  --color-secondary: #6c5a00;
+  --color-secondary-container: #ffd709;
+  --color-tertiary: #0f6b00;
+  --color-tertiary-container: #2ff801;
+  --color-background: #fff4ef;
+  --color-surface: #fff4ef;
+  --color-surface-container: #ffe3d0;
+  --color-surface-container-low: #ffede3;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #4b2500;
+  --color-on-surface-variant: #8c4a00;
+  --color-on-background: #4b2500;
+  --color-error: #b41340;
+  --color-error-container: #f74b6d;
+  --color-outline-variant: #ff9121;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-sans;
+  }
+}
+
+.headline-text {
+  @apply font-headline;
+}
+
+.math-gradient-blue {
+  background: linear-gradient(135deg, #0846ed 0%, #859aff 100%);
+}
+
+.math-gradient-orange {
+  background: linear-gradient(135deg, #ff9121 0%, #ffd5b6 100%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.neon-glow-primary {
+  box-shadow: 0 0 20px rgba(8, 70, 237, 0.3);
+}
